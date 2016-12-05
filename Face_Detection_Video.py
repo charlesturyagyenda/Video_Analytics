@@ -1,7 +1,7 @@
 import cv2
 
 cap = cv2.VideoCapture()
-cap.open("slow_traffic_small.mp4")
+cap.open("FIG_2016.mp4")
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 

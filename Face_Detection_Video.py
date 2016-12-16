@@ -2,7 +2,7 @@ import cv2
 import sys
 import os
 
-fp = os.path.join(sys.path[0], "slow_traffic_small.mp4")
+fp = os.path.join(sys.path[0], "FIG_2016.mp4")
 fp2 = os.path.join(sys.path[0], "haarcascade_frontalface_default.xml")
 
 cap = cv2.VideoCapture()

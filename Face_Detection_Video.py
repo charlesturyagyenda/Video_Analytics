@@ -9,7 +9,7 @@ cap = cv2.VideoCapture()
 cap.open(fp)
 
 face_cascade = cv2.CascadeClassifier(fp2)
-
+count = 0
 while True:
     ret, frame = cap.read()
 
@@ -18,9 +18,9 @@ while True:
         faces = face_cascade.detectMultiScale(gray,1.3, 8)
         for (x,y,w,h) in faces:
             cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),2)
-        cv2.imshow('Video Feed at FLE Instance....',frame)
-        cv2.waitKey(25)
-
+        
+    count +=1
+    print(count)
     else:
         break
 

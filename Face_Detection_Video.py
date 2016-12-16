@@ -1,7 +1,10 @@
 import cv2
+import sys
+import os
 
+fp = os.path.join(sys.path[0], "slow_traffic_small.mp4")
 cap = cv2.VideoCapture()
-cap.open("slow_traffic_small.mp4")
+cap.open(fp)
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
